@@ -24,7 +24,17 @@ function MovieForm({handleFormSubmit}) {
                 "Content-Type":"application/json"
             },
             body: JSON.stringify(formData)
-        }).then(r => r.json()).then(data => handleFormSubmit(data))
+        }).then(r => r.json()).then(data => {
+            handleFormSubmit(data)
+            setFormData({
+                title: "",
+                year: "",
+                image_url: "",
+                genre: "",
+                duration: "",
+                rated: ""
+            })
+        })
     }
 
 
