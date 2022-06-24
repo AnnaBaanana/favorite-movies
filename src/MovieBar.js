@@ -5,22 +5,18 @@ import Search from "./Search";
 
 function MovieBar() {
     const [movies, setMovies] = useState([]);
+    const [searchVal, setSearchVal] = useState("");
 
     useEffect( () => {
         fetch("http://localhost:3001/favoriteMovies").then(r=>r.json()).then(data => setMovies(data))},[])
-
-    const handleSearch = ((searchVal) => {
-        console.log("this is searchVal: ", searchVal)
-        const searchedMovies = movies.filter(movie => movie.title.includes(searchVal))
-        console.log(searchedMovies)
-    })
+   
 
     return (
     <div>
         <MovieForm />
         <br></br>
-        <Search handleSearch={handleSearch}/>
-        <MovieList movies={movies} />
+        <Search searchVal={searchVal} handleSearch={setSearchVal} />
+        <MovieList movies={movies} searchVal={searchVal}/>
     </div>)
 }
 
