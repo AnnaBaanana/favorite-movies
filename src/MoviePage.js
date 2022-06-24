@@ -5,7 +5,8 @@ function MoviePage({movie}) {
         <div class="card" style={{width: "18rem;"}}>
             <h4 class="card-title">{movie.title}</h4>
             <img src={movie.image_url} alt={movie.name} className="thumbnail"/>
-            <button type="button" class="btn btn-dark">Show Movie Info</button>
+            <button type="button" class="btn btn-info">Show Movie Info</button>
+            <button type="button" class="btn btn-dark">Edit Movie Info</button>
         </div>
     )
 }
