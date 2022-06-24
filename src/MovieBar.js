@@ -9,11 +9,16 @@ function MovieBar() {
 
     useEffect( () => {
         fetch("http://localhost:3001/favoriteMovies").then(r=>r.json()).then(data => setMovies(data))},[])
+
+    function handleFormSubmit(formData) {
+        const newMovies = [...movies, formData]
+        setMovies(newMovies)
+    }
    
 
     return (
     <div>
-        <MovieForm />
+        <MovieForm handleFormSubmit={handleFormSubmit}/>
         <br></br>
         <Search searchVal={searchVal} handleSearch={setSearchVal} />
         <MovieList movies={movies} searchVal={searchVal}/>

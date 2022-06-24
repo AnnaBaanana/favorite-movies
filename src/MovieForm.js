@@ -1,28 +1,36 @@
 import React, {useState} from "react";
 
 
-function MovieForm() {
+function MovieForm({handleFormSubmit}) {
     const [formData, setFormData] = useState({
-        title: null,
-        year: null,
-        image_url: null,
-        genre: null,
-        duration: null,
-        rated: null,
+        title: "",
+        year: "",
+        image_url: "",
+        genre: "",
+        duration: "",
+        rated: ""
     })
 
     function handleFormChange(e) {
-        const name=e.target.name;
-        const value=e.target.value;
-        const newFormData = {...formData, [name]: value}
-        console.log("new Form Data ", newFormData)
+        const newFormData = {...formData, [e.target.name]: e.target.value}
         setFormData(newFormData)
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        fetch("http://localhost:3001/favoriteMovies", {
+            method: "POST",
+            headers: {
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(formData)
+        }).then(r => r.json()).then(data => handleFormSubmit(data))
     }
 
 
     return (
         <div>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div class="form-group">
                     <label for="title">Movie Title</label>
                     <input type="text" value={formData.title} name="title" class="form-control" id="title" placeholder="Enter movie title" onChange={handleFormChange}/>
@@ -43,12 +51,12 @@ function MovieForm() {
                     <label for="genre">Genre</label>
                     <select name="genre" value={formData.genre} class="form-control" onChange={handleFormChange}>
                         <option value="select">Select Genre</option>
-                        <option value="drama">Drama</option>
-                        <option value="romance">Romance</option>
-                        <option value="thriller">Thriller</option>
-                        <option value="horror">Horror</option>
-                        <option value="fiction">Fiction</option>
-                        <option value="kids">Kids</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Kids">Kids</option>
                     </select>
                 </div>
                 <div class="form-group">
