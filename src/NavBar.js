@@ -1,11 +1,13 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
+import MovieBar from "./MovieBar";
+import MovieForm from "./MovieForm";
 
 function NavBar() {
     return (
-        <div className="navbar">
-            <a href="/.movies">Movies</a>
-            <a href="/.form">Add New Movie</a>
-            <a href="/.search">Search Movies</a>
+        <div class="navbar navbar-light bg-light justify-content-between">
+                <NavLink to="/Movies" exact>Movie Bar</NavLink>
+                <NavLink to="/Movies/Add" exact>Add Movie</NavLink>
         </div>
     )
 }

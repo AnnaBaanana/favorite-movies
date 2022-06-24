@@ -18,10 +18,10 @@ function MovieBar() {
 
     return (
     <div>
-        <MovieForm handleFormSubmit={handleFormSubmit}/>
-        <br></br>
         <Search searchVal={searchVal} handleSearch={setSearchVal} />
         <MovieList movies={movies} searchVal={searchVal}/>
+        <br></br>
+        <MovieForm handleFormSubmit={handleFormSubmit}/>
     </div>)
 }
 
