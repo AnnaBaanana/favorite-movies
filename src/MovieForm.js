@@ -25,8 +25,8 @@ function MovieForm() {
                     <input type="text" name="duration" class="form-control" id="duration" placeholder="Provide duration in minutes" />
                 </div>
                 <div class="form-check">
-                <label for="rating">Rated</label>
-                    <select>Rating
+                <label for="rated">Rated</label>
+                    <select name="rating">Rating
                         <option value="select">Select Rating</option>
                         <option value="PG13">PG-13</option>
                         <option value="R">R</option>
