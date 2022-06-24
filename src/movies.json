@@ -1,0 +1,93 @@
+{ "favoriteMovies" : [
+    {
+        "id": 1,
+        "title": "Babel",
+        "year": 2006,
+        "genre": "Drama",
+        "duration": 143,
+        "rated": "R",
+        "image_url": "https://www.imdb.com/title/tt0449467/mediaviewer/rm1692291584/?ref_=tt_ov_i"
+    },
+    {
+        "id": 2,
+        "title": "Biutiful",
+        "year": 2010,
+        "genre": "Drama",
+        "duration": 148,
+        "rated": "R",
+        "image_url": "https://www.imdb.com/title/tt1164999/mediaviewer/rm1892124416/?ref_=tt_ov_i"
+    },
+    {
+        "id": 3,
+        "title": "The Curious Case of Benjamin Button",
+        "year": 2008,
+        "genre": "Drama",
+        "duration": 166,
+        "rated": "PG-13",
+        "image_url": "https://www.imdb.com/title/tt0421715/mediaviewer/rm3945676288/?ref_=tt_ov_i"
+    },
+    {
+        "id": 4,
+        "title": "The Proposal",
+        "year": 2009,
+        "genre": "Romance",
+        "duration": 108,
+        "rated": "PG-13",
+        "image_url": "https://m.media-amazon.com/images/I/81EHOg5QoSL.jpg"
+    },
+    {
+        "id": 5,
+        "title": "The Lost City",
+        "year": 2022,
+        "genre": "Romance",
+        "duration": 112,
+        "rated": "PG-13",
+        "image_url": "https://www.imdb.com/title/tt13320622/mediaviewer/rm3056854785/?ref_=tt_ov_i"
+    },
+    {
+        "id": 6,
+        "title": "The Blind Side",
+        "year": 2009,
+        "genre": "Biography",
+        "duration": 129,
+        "rated": "PG-13",
+        "image_url": "https://www.imdb.com/title/tt0878804/mediaviewer/rm3647637760/?ref_=tt_ov_i"
+    },
+    {
+        "id": 8,
+        "title": "Three Billboards Outside Ebbing, Missouri",
+        "year": 2017,
+        "genre": "Drama",
+        "duration": 115,
+        "rated": "R",
+        "image_url": "https://www.imdb.com/title/tt5027774/mediaviewer/rm3800849152/?ref_=tt_ov_i"
+    },
+    {
+        "id": 9,
+        "title": "Bridesmaids",
+        "year": 2011,
+        "genre": "Comedy",
+        "duration": 125,
+        "rated": "R",
+        "image_url": "https://www.imdb.com/title/tt1478338/mediaviewer/rm672433408/?ref_=tt_ov_i"
+    },
+    {
+        "id": 10,
+        "title": "The Wedding PLanner",
+        "year": 2001,
+        "genre": "Comedy",
+        "duration": 103,
+        "rated": "PG-13",
+        "image_url": "https://www.imdb.com/title/tt0209475/mediaviewer/rm1759787264/?ref_=tt_ov_i"
+    },
+    {
+        "id": 11,
+        "title": "The Devil Wears Prada",
+        "year": 2006,
+        "genre": "Comedy",
+        "duration": 109,
+        "rated": "PG-13",
+        "image_url": "https://www.imdb.com/title/tt0458352/mediaviewer/rm1431456768/?ref_=tt_ov_i"
+    }
+    ]
+}
