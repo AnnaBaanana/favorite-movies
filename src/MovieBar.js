@@ -1,7 +1,9 @@
 import React, { useState, useEffect} from "react";
+import {Route, useRouteMatch} from "react-router-dom";
 import MovieList from "./MovieList"
 import MovieForm from "./MovieForm";
 import Search from "./Search";
+import MovieShow from "./MovieShow";
 
 function MovieBar() {
     const [movies, setMovies] = useState([]);
@@ -14,14 +16,24 @@ function MovieBar() {
         const newMovies = [...movies, formData]
         setMovies(newMovies)
     }
-   
+
 
     return (
-    <div>
-        <Search searchVal={searchVal} handleSearch={setSearchVal} />
-        <MovieList movies={movies} searchVal={searchVal}/>
-        <br></br>
-        <MovieForm handleFormSubmit={handleFormSubmit}/>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <MovieList movies={movies} searchVal={searchVal}/>
+                    <br></br>
+                    <MovieForm handleFormSubmit={handleFormSubmit}/>
+                </div>
+                 <div class="col-sm">
+                    <Search searchVal={searchVal} handleSearch={setSearchVal} />
+                    <br></br>
+                    <Route >
+                        <MovieShow />
+                    </Route>
+                 </div>
+             </div>
     </div>)
 }
 
