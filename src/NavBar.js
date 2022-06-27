@@ -6,6 +6,7 @@ import MovieForm from "./MovieForm";
 function NavBar() {
     return (
         <div class="navbar navbar-light bg-light justify-content-between">
+                <NavLink to="/" exact>Home</NavLink>
                 <NavLink to="/Movies" exact>Movie Bar</NavLink>
                 <NavLink to="/Movies/Add" exact>Add Movie</NavLink>
         </div>
