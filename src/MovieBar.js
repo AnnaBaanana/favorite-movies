@@ -8,7 +8,6 @@ import MovieShow from "./MovieShow";
 function MovieBar({movies, searchVal, handleSearchVal}) {
 
 function handleSearch(searchVal) {
-    console.log("this is help from MovieBar", searchVal)
     handleSearchVal(searchVal)
 }
  

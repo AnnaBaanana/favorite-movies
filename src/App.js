@@ -5,6 +5,7 @@ import {Switch, Route} from "react-router-dom";
 import NavBar from './NavBar';
 import MovieBar from "./MovieBar";
 import MovieForm from './MovieForm';
+import RandomPick from "./RandomPick";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <h3>Search for really good movies to watch or add your own to the list!</h3>
       <br></br>
       <strong>Our today's pick is</strong>
+      <RandomPick movies={movies} />
     </div>
   );
 }

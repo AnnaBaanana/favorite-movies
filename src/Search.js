@@ -3,7 +3,6 @@ import React from "react";
 function Search({searchVal, handleSearch}) {
 
     function handleSearchChange(e) {
-    console.log("search val change: ", e.target.value)
     handleSearch(e.target.value)
     }
 
