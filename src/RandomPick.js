@@ -13,7 +13,7 @@ function RandomPick({movies}) {
             <br></br>
             <div class="container">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-md-6" key={randomPick.id} class="card" style={{width: "35rem"}}>
+                    <div class="col-md-6" key={randomPick.id} className="card" style={{width: "35rem"}}>
                         <h4 class="card-title">{randomPick.title}</h4>
                         <img src={randomPick.image_url} alt={randomPick.name} className="thumbnail"/>
                     </div>

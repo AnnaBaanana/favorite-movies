@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
 
 
 function MovieForm({handleFormSubmit}) {
@@ -9,7 +10,7 @@ function MovieForm({handleFormSubmit}) {
         genre: "",
         duration: "",
         rated: ""
-    })
+    });
 
     function handleFormChange(e) {
         const newFormData = {...formData, [e.target.name]: e.target.value}
@@ -35,6 +36,7 @@ function MovieForm({handleFormSubmit}) {
                 rated: ""
             })
         })
+        alert("Thank you! Your movie was submitted!")
     }
 
 
