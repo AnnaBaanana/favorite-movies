@@ -11,7 +11,7 @@ function MovieList({movies, searchVal}) {
         return (<div key={movie.id} class="card" style={{width: "25rem"}}>
             <h4 class="card-title">{movie.title}</h4>
             <img src={movie.image_url} alt={movie.name} className="thumbnail"/>
-            <button type="button" class="btn btn-info">
+            <button type="button" class="btn btn-link">
                 <Link to={`/Movies/${movie.id}`}>Show More Info</Link></button>
         </div>)
         })
