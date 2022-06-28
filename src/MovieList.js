@@ -8,7 +8,7 @@ function MovieList({movies, searchVal}) {
 
     const movieList = movies.filter(movie => movie.title.toLowerCase()
     .includes(searchVal.toLowerCase())).map(movie => {
-        return (<div key={movie.id} class="card" style={{width: "22rem"}}>
+        return (<div key={movie.id} class="card" style={{width: "25rem"}}>
             <h4 class="card-title">{movie.title}</h4>
             <img src={movie.image_url} alt={movie.name} className="thumbnail"/>
             <button type="button" class="btn btn-info">

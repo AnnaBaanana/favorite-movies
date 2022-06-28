@@ -13,12 +13,11 @@ function handleSearch(searchVal) {
  
     return (
     <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <MovieList movies={movies} searchVal={searchVal}/>
-                </div>
-                 <div class="col-sm">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
                     <Search searchVal={searchVal} handleSearch={handleSearch} />
+                    <br></br>
+                    <MovieList movies={movies} searchVal={searchVal}/>                    
                     <br></br>
                     <Route >
                         <MovieShow />
