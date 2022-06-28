@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import {Link} from "react-router-dom";
 
 
 function MovieList({movies, searchVal}) {
@@ -11,9 +10,7 @@ function MovieList({movies, searchVal}) {
         return (<div key={movie.id} class="card" style={{width: "20rem"}}>
             <h4 class="card-title">{movie.title}</h4>
             <img src={movie.image_url} alt={movie.name} className="thumbnail"/>
-            <button type="button" class="btn btn-link"> 
-                <Link to={`/Movies/${movie.id}`}>Show More Info</Link>
-            </button>
+            <button type="button" class="btn btn-link"> Show More Info </button>
         </div>)
         })
 
