@@ -98,6 +98,24 @@
       "duration": "146",
       "rated": "PG",
       "id": 12
+    },
+    {
+      "title": "Shrek",
+      "year": "2001",
+      "image_url": "https://static.independent.co.uk/2021/05/19/16/shutterstock_editorial_5884037o.jpg?quality=75&width=982&height=726&auto=webp",
+      "genre": "Kids",
+      "duration": "90",
+      "rated": "G",
+      "id": 13
+    },
+    {
+      "title": "Shrek",
+      "year": "2001",
+      "image_url": "https://static.independent.co.uk/2021/05/19/16/shutterstock_editorial_5884037o.jpg?quality=75&width=982&height=726&auto=webp",
+      "genre": "Drama",
+      "duration": "90",
+      "rated": "G",
+      "id": 14
     }
   ],
   "posts": [
